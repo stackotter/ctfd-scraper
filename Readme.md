@@ -1,7 +1,9 @@
 # CTFd Scraper
 
-This fork updates the scraper to python3 and changes the format to suit my liking. It also gives the
-code a general clean up.
+CTFd is a popular platform for hosting capture the flag competitions (hacking competitions). This
+tool automates downloading the challenges and their associated files.
+
+This fork updates the scraper to python3 and changes the format to suit my liking.
 
 ## Usage
 
