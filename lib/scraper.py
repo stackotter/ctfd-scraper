@@ -78,7 +78,8 @@ class Scraper():
             chall_info = json.loads(self.api_get("/challenges/%d" % id).text)["data"]
             description = chall_info["description"].replace("\x0d", "")
             files = chall_info["files"]
-            connection_info = chall_info["connection_info"]
+            if "connection_info" in chall_info:
+                connection_info = chall_info["connection_info"]
 
             # Create challenge directory
             chall_dir = directory_name + "/" + cleaned_category + "/" + cleaned_name
